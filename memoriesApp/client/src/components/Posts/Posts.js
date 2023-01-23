@@ -1,8 +1,8 @@
+import React from "react";
 import Post from "./Post/Post";
 import { useSelector } from 'react-redux'
 import postsStyles from "./styles";
 import { CircularProgress, Grid } from "@mui/material";
-import React from "react";
 const Posts = ({currentId, setCurrentId}) => {
     const classes = postsStyles()
     //const dispatch = useDispatch()

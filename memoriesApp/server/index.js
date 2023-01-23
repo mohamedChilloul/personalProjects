@@ -3,6 +3,7 @@ import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import postRoutes from './routes/posts.js'
+import userRoutes from './routes/users.js'
 import dotenv from 'dotenv'
 
 
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({
     extended : 'true'
 }))
 app.use('/posts', postRoutes)
+app.use('/users', userRoutes)
 
 
 
