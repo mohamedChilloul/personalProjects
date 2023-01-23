@@ -13,6 +13,7 @@ import {useDispatch} from 'react-redux'
 import { createUser, login, putUser } from '../../reducers/userReducer'
 import { useNavigate } from 'react-router-dom'
 
+import {clientId} from './secret'
 
 const Auth = () => {
   const initForm = {firstName:'', lastName:'', email:'', password:'', confirmPassword : ''}
@@ -24,8 +25,7 @@ const Auth = () => {
 
   const classes = authStyles()
   //Id Client Google : 
-  const clientId = '302287650913-kchp8v9ceibfdjjrb7nqq7udomh2gdp5.apps.googleusercontent.com'
-  //const clentIdSec = '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'
+  
 
 /*   const start = () => {
     gapi.client.init({
